@@ -24,6 +24,7 @@ pipeline {
             }
             stage('Finalize') {
                 steps {
+                    bat 'docker compose stop'
                     bat 'docker tag jenkinsdocker great800/jenkinsdocker:latest'
 	                bat 'docker push great800/jenkinsdocker:latest'
                 }
