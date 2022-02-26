@@ -29,5 +29,5 @@ def main_function(input):
         print("Number is out of range [1:1000]")
         return (Utils.BAD_RETURN_CODE)
 
-test = test_scores_service("http://127.0.0.1:5000")
-main_function(test)
+#test = test_scores_service("http://127.0.0.1:5000")
+#main_function(test)
